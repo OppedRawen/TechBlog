@@ -1,0 +1,15 @@
+<div class="text-center">
+  <h2>{{name}}</h2>
+  <p>{{{get_emoji}}}</p>
+  <p>{{description}}</p>
+  <p>Created by {{user.name}} on {{format_date date_created}}</p>
+ 
+  <form class="addComments" data-id="{{id}}" action="/comments">
+   <input type="text" class="userComment" name="userComment" value="userComment"placeholder="comment">
+
+   <input type="submit" value = "submit" placeholder="add Comment">  
+
+  </form>
+</div>
+
+<script src="/js/comment.js"></script>
